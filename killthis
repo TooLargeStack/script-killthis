@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+# get the name of the process from informed argument.
+process=$1;
+
+# kill completely this process.
+sudo kill -s KILL $(pidof $process)
+
+# End Of File
